@@ -188,7 +188,7 @@ sequenceDiagram
     App2->>DB: COMMIT;
     App2-->>E: Email: "Congratulations Edmund! Seat 13 is confirmed."
 
-    Note over DB: DISASTER: Both customers paid. Both received confirmation.<br/>Hussein arrives at cinema; Edmund is sitting in his seat!
+    Note over DB: DISASTER: Both customers paid. Both received confirmation.<br/>Hussein arrives at cinema - Edmund is sitting in his seat!
 ```
 
 ### Why Did This Happen?
