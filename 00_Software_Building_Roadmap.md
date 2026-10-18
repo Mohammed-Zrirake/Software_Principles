@@ -98,6 +98,7 @@ flowchart TD
 #### 🔐 Pillar 11: Database Security & Wire Protocol Internals (`11_Database_Security/`)
 - [ ] [[01_Securing Database In-Transit Traffic_ PostgreSQL TLS_SSL Configuration, OpenSSL, and pg_hba.conf|01. Securing Database In-Transit Traffic with TLS/SSL]] — The death of the private network fallacy, PostgreSQL opportunistic `SSLRequest` handshake, Docker lab (PostgreSQL 12 & pgAdmin 4), OpenSSL 4096-bit RSA keys, `chmod 600` permission enforcement, client `sslmode` tiers (`prefer` vs `verify-full`), and `pg_hba.conf` `hostssl` firewalling & mTLS.
 - [ ] [[02_PostgreSQL Wire Protocol Security_ Wireshark Packet Analysis, Handshake Anatomy, and Information Disclosure|02. PostgreSQL Wire Protocol Under the Microscope]] — Layer 4 TCP to Layer 7 Protocol 3.0 framing, Wireshark packet capture analysis, authentication challenge-response (`AuthenticationMD5Password` vs `SCRAM-SHA-256`), cleartext query leakage (`'Q'` and `'D'`), error frame information disclosure (`auth.c` and `CheckPW` line leakage), and socket teardown race conditions (TCP `RST`).
+- [ ] [[03_MongoDB Wire Protocol & Security_ Wireshark TLS Decryption, SASL_SCRAM Handshake, and OP_MSG Anatomy|03. MongoDB Wire Protocol & Security Under the Microscope]] — TLS 1.3 decryption using `SSLKEYLOGFILE`, `isMaster` cluster & shard topology discovery, 4-step SASL/SCRAM authentication handshake chattiness, `OP_MSG` extensible framing (OpCode 2013), driver lazy loading mechanics, and client-side vs. server-side cursor batching.
 
 
 ---
